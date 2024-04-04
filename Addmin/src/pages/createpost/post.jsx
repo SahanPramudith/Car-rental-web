@@ -51,7 +51,7 @@ export default function Post() {
     return (
         <div>
             <div
-                style={{display: 'flex', justifyContent: 'center', backgroundColor: '#565050', color: '#ffefef'}}>Post
+                style={{display: 'flex', justifyContent: 'center', backgroundColor: '#565050', color: '#ffefef'}}>Create post
             </div><br/>
             <Grid item xs={12} sm={8} md={5} component={Paper} elevation={12}
                   sx={{width: 345, display: 'flex', justifyContent: "center", borderRadius: 5}}

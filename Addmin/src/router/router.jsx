@@ -14,11 +14,11 @@ import {Tooltip} from "@mui/material";
 
 const router =[
     {
-        name:"Post",
+        name:"Create post",
         path:'/post',
         component:<Post/>,
         key:'post',
-        icon:<Tooltip title="Post" placement="right-end"><PostAddIcon/></Tooltip>
+        icon:<Tooltip title="Create post" placement="right-end"><PostAddIcon/></Tooltip>
     },
     {
         name:"view Post ",
