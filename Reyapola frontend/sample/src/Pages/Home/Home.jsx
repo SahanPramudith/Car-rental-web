@@ -154,7 +154,7 @@ export default function Home() {
 
         >
             {data.map((val, index) => (
-                <Card sx={{maxWidth: 250, maxHeight: 250, padding: 2, margin: 2}}>
+                <Card sx={{maxWidth: 300, maxHeight: 300, padding: 2, margin: 2}}>
                     <CardActionArea>
                         <img src={`http://localhost:3000/` + val.image}
                              style={{width: '250px', height: "170px"}}
