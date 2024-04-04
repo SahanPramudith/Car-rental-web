@@ -1,0 +1,73 @@
+import Register from "../Rregister/Register.jsx";
+import { Button, Grid } from "@mui/material";
+import bg2 from "../../assert/bg2.avif";
+import Paper from "@mui/material/Paper";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import React, {useEffect, useState} from "react";
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import Typography from '@mui/material/Typography';
+import { CardActionArea } from '@mui/material';
+import {  } from '@mui/material';
+import axios from "axios";
+import Box from "@mui/material/Box";
+import Car from "../Car/Car.jsx";
+import 'Home.css'
+
+
+
+
+
+export default function Home() {
+
+
+
+
+    useEffect(() => {
+        AOS.init({ diuration: 2000 });
+    }, [])
+
+
+
+
+    return (
+        <div className={"heder"}>
+            <Grid container component="main" sx={{ height: '85vh', width:"fullWidth", backgroundColor: '#000' }}>
+                <Grid item xs={12} sm={8} md={5} sx={{ color: '#562222' }}>
+                    <div data-aos="fade-up">
+                        <h3 data-aos="fade-right" data-aos-duration="2000" style={{ marginLeft: 250, marginTop: 230 }}>
+                            Play you trip now
+                        </h3>
+                    </div>
+
+                    <h1 data-aos="fade-right" data-aos-duration="2000" style={{ marginLeft: 250, marginBottom: 0 }} >car rentel.....</h1>
+                    <Button variant="outlined">Get started</Button>
+                    <Button variant="outlined">Book ride</Button>
+                </Grid>
+                <Grid
+                    data-aos="fade-right" data-aos-duration="2000"
+                    item
+                    xs={false}
+                    sm={4}
+                    md={7}
+                    sx={{
+
+                        background: `url(${bg2})`,
+                        backgroundRepeat: 'no-repeat',
+                        backgroundColor: (t) =>
+                            t.palette.mode === 'light' ? t.palette.grey[50] : t.palette.grey[900],
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center',
+                    }}
+                />
+            </Grid>
+            <h1>register</h1>
+            <Car/>
+
+        </div>
+
+
+    )
+}

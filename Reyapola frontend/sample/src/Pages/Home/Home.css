@@ -1,0 +1,12 @@
+.box{
+    display:flex;
+    justify-content: center;
+
+    margin: 10px;
+    border: 10px solid red;
+    padding: 10px;
+}
+.box TextField{
+    border: greenyellow;
+}
+
