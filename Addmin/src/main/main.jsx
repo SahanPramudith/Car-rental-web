@@ -22,6 +22,7 @@ import router from "../router/router.jsx";
 import {NavLink, Route, Routes} from "react-router-dom";
 import post from "../pages/createpost/post.jsx";
 import Post from "../pages/createpost/post.jsx";
+import Viwe from "../pages/Viwe/View.jsx";
 
 const drawerWidth = 240;
 
@@ -173,6 +174,7 @@ export default function Main() {
                 <Routes>
 
                     {getroute(router)}
+                    <Route path={'*'} element={<Viwe/>}></Route>
                 </Routes>
 
             </Box>
